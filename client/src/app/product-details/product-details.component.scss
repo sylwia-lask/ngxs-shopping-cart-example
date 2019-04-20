@@ -1,0 +1,19 @@
+@import "../../assets/variables.scss";
+
+.card-body {
+    background-color: $main;
+    color: $white;
+}
+
+.btn-details {
+    background-color: $secondary;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 0; 
+    transition: 0.5s;
+
+    &:hover {
+        backround-color: $white;
+        color: $main;
+    }
+}

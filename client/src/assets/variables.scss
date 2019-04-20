@@ -1,0 +1,13 @@
+/* colors */
+
+$main: #003ea3;
+$secondary: #1dea74;
+$lightGray: #ddd;
+$textMain: rgba(#000, 0.8);
+$white: rgba(#fff, 0.8);
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

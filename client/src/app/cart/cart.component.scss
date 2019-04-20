@@ -1,0 +1,49 @@
+@import "../../assets/variables.scss";
+
+.cart-container {
+    padding: 20px;
+    background-color: $main;
+    color: $white;
+}
+
+p {
+    font-size: 12px;
+}
+
+.products-container {
+    height: 150px; 
+    padding: 5px;
+    border: 2px $white dashed;
+    overflow-y: auto;
+}
+
+.cart-placeholder {
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.products-number {
+    display: inline-block;
+}
+
+.products-list {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+
+    li {
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        .product-id {
+            margin-right: 5px;
+            color: $secondary;
+        }
+    }
+}

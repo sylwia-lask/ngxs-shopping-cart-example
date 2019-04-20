@@ -1,0 +1,23 @@
+<div class="cart-container">
+    <h5>
+        <fa-icon [icon]="faAddressBook"></fa-icon>
+        Contact
+    </h5>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt auctor sapien nec accumsan.
+    </p>
+
+    <h5>
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+        Cart <span *ngIf="(productCart$ | async).length" class="cart-placeholder" class="products-number">({{ (productCart$ | async).length }})</span>
+    </h5>
+    <div class="products-container">
+        <ul class="products-list">
+            <li *ngFor="let product of productCart$ | async"> 
+                <span class="product-id">{{ product.price }} zł</span>{{ product.name }}
+            </li>
+        </ul>
+        <div *ngIf="!(productCart$ | async).length" class="cart-placeholder">Cart is empty</div>
+    </div>
+    <span *ngIf="totalPrice$ | async as totalPrice">Total: {{ totalPrice }}</span>
+</div>

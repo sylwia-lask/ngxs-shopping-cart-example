@@ -1,0 +1,15 @@
+@import "../../assets/variables.scss";
+
+.products-container {
+    height: calc(100vh - 80px); 
+    overflow-y: auto; 
+}
+
+.card {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-text, .card-title {
+    @include ellipsis;
+}

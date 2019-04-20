@@ -1,0 +1,30 @@
+@import "../../assets/variables.scss";
+
+.navbar-main {
+    border-bottom: 1px solid $lightGray;
+}
+
+.navbar-items {
+    justify-content: flex-end; 
+}
+
+.nav-item, .navbar-brand {
+    cursor: pointer;
+}
+
+.nav-item {
+    a {
+        color: $textMain;
+        font-weight: 600;
+
+        &.active, &:hover {
+            color: $main;
+        }
+    }
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}

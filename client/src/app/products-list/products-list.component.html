@@ -1,0 +1,16 @@
+<div class="container products-container">
+    <div class="row">
+        <div *ngFor="let product of products$ | async" class="col-lg-3 col-md-4 col-sm-4">
+            <div class="card" (click)="chooseProduct(product)" routerLink="{{ product.id }}">
+                <img class="card-img-top" [src]="product.imgThumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.desc }}</p>
+                </div>
+            </div>
+        </div>
+        <ng-container *ngIf="loading">
+            Loading...
+        </ng-container>
+    </div>
+</div>

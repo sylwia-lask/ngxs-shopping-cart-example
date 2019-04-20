@@ -1,0 +1,28 @@
+@import 'assets/variables.scss';
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.icon-big {
+    margin: 30px;
+
+    .ng-fa-icon {
+        padding: 20px; 
+        color: $main;
+    }
+    
+}
+
+.card-info {
+    margin: 30px auto;
+    width: 70vw; 
+
+    @media screen and (max-width: 1200px) {
+        width: 90vw;
+    }
+}
